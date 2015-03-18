@@ -4,7 +4,7 @@ MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
 # Adding YARP source list
 RUN echo "deb http://backports.debian.org/debian-backports/ wheezy-backports main" | tee -a /etc/apt/sources.list 
-RUN apt-get update
+RUN apt-get -t wheezy-backports update
 
 RUN apt-get install -y -t wheezy-backports qtbase5-dev \
        qtdeclarative5-dev qtmultimedia5-dev qml-module-qtquick2 \
