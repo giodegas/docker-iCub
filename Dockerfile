@@ -8,7 +8,7 @@ RUN apt-get install -y cmake cmake-curses-gui cmake-qt-gui
 
 # 3D Mesa libraries and xterm to run X apps
 RUN apt-get -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev xterm
-RUN apt-get -y instal qt5
+RUN apt-get -y install qt5
 
 # Install YARP sources
 WORKDIR /usr/src
