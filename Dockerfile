@@ -1,4 +1,4 @@
-FROM tutum/debian:jessie
+FROM tutum/debian:6.0.9
 
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
