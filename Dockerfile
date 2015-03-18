@@ -2,6 +2,9 @@ FROM tutum/debian:wheezy
 
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
+# Adding YARP source list
+sudo sh -c 'echo "deb http://www.icub.org/debian wheezy contrib/science" > /etc/apt/sources.list.d/icub.list'
+
 # System update and basic tools
 RUN apt-get update && apt-get -y install curl build-essential apt-utils wget git cmake
 
