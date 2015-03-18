@@ -13,5 +13,5 @@ WORKDIR /usr/src
 RUN git clone git://github.com/robotology/yarp.git
 WORKDIR yarp 
 RUN mkdir build && cd build && cmake -DSKIP_ACE=TRUE .. && make
-RUN ./bin/yarp check
+RUN bin/yarp check
 
