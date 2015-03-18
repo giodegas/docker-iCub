@@ -3,6 +3,7 @@ FROM tutum/debian:wheezy
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
 # Adding YARP source list
+RUN apt-get install deb
 RUN deb http://backports.debian.org/debian-backports/ wheezy-backports main
 RUN apt-get update
 
