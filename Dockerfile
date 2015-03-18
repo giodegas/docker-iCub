@@ -1,4 +1,4 @@
-FROM tutum/debian:wheezy
+FROM tutum/ubuntu:14.04
 
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
