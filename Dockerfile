@@ -1,13 +1,9 @@
-FROM tutum/debian:6.0.9
+FROM tutum/debian:wheezy
 
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
+RUN sh -c 'echo "deb http://www.icub.org/ubuntu trusty contrib/science" > /etc/apt/sources.list.d/icub.list'
 RUN apt-get update
-RUN apt-get install -y qtbase5-dev \
-       qtdeclarative5-dev qtmultimedia5-dev qml-module-qtquick2 \
-       qml-module-qtquick-window2 qml-module-qtmultimedia \
-       qml-module-qtquick-dialogs qml-module-qtquick-controls
+RUN apt-get install icub
 
-# Install YARP binaries
-RUN apt-get install yarp
 RUN yarp check
