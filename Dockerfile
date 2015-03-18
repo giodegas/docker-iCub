@@ -3,13 +3,13 @@ FROM tutum/debian:wheezy
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
 # Adding YARP source list
-sudo sh -c 'echo "deb http://www.icub.org/debian wheezy contrib/science" > /etc/apt/sources.list.d/icub.list'
+deb http://backports.debian.org/debian-backports/ wheezy-backports main
+RUN apt-get update
 
-# System update and basic tools
-RUN apt-get update && apt-get -y install curl build-essential apt-utils wget git cmake
-
-# 3D Mesa libraries and xterm to run X apps
-RUN apt-get -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev xterm
+RUN apt-get install -y -t wheezy-backports qtbase5-dev \
+       qtdeclarative5-dev qtmultimedia5-dev qml-module-qtquick2 \
+       qml-module-qtquick-window2 qml-module-qtmultimedia \
+       qml-module-qtquick-dialogs qml-module-qtquick-controls
 
 # Install YARP binaries
 RUN apt-get install yarp
