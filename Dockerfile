@@ -3,7 +3,7 @@ FROM tutum/debian:wheezy
 MAINTAINER Giovanni De Gasperis <giovanni@giodegas.it>
 
 # Adding YARP source list
-RUN echo "deb http://backports.debian.org/debian-backports/ wheezy-backports main" | sudo tee -a /etc/apt/sources.list 
+RUN echo "deb http://backports.debian.org/debian-backports/ wheezy-backports main" | tee -a /etc/apt/sources.list 
 RUN apt-get update
 
 RUN apt-get install -y -t wheezy-backports qtbase5-dev \
