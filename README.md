@@ -1,5 +1,5 @@
-# docker-iCube
-Docker container for YARP & iCube : Yet An other Robot Platform - http://wiki.icub.org
+# docker-iCub
+Docker container for YARP & iCub : Yet An other Robot Platform - http://wiki.icub.org
 
 iCub
 ====
