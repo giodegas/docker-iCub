@@ -17,3 +17,5 @@ http://wiki.icub.org/wiki/ICub_Software_Installation
 Follow us on:
 
 [![iCub Research](http://ssl.gstatic.com/images/icons/gplus-32.png)](https://plus.google.com/u/0/communities/116897884020660435466?prsrc=3)
+
+[![](https://images.microbadger.com/badges/image/giodegas/icub.svg)](https://microbadger.com/images/giodegas/icub "Get your own image badge on microbadger.com")
